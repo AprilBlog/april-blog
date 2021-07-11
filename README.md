@@ -1,24 +1,37 @@
 # april-blog
 
-## Project setup
-```
-yarn install
-```
+A Blog Platform runs on the top of RSS3
 
-### Compiles and hot-reloads for development
-```
+
+
+# Project Setup
+
+```bash
+# 1. install the deps
+yarn install
+
+# 2. need a env file to save ur sensitive config info
+cat env-template > .env
+
+# 3. u r ready to go
 yarn serve
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+# Utils 
 
-### Lints and fixes files
-```
-yarn lint
-```
+## Log
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+__usage:__
+```typescript
+// saying u have VUE_APP_DEVELOPER = test
+
+// log in default namespace //
+log('What ever u want')
+// test:default What ever u want
+
+
+// log with customized namespace //
+const subLog = log('logic1')
+subLog('What ever u want')
+// test:logic1 What ever u want
+```
