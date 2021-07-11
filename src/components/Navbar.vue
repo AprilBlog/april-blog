@@ -29,7 +29,7 @@
         >
           RGB
         </vs-navbar-item>
-        <template id='right'>
+        <template id="right">
           <vs-button>Login</vs-button>
         </template>
       </template>
