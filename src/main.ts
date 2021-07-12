@@ -1,26 +1,19 @@
-import Vue from "vue";
-import App from "./App.vue";
-import "./registerServiceWorker";
-import router from "./router";
-import Vuesax from "vuesax";
-import "vuesax/dist/vuesax.css"; //Vuesax styles
+import { ViteSSG } from 'vite-ssg'
+import generatedRoutes from 'virtual:generated-pages'
+import { setupLayouts } from 'virtual:generated-layouts'
+import App from './App.vue'
+import 'virtual:windi.css'
+import 'virtual:windi-devtools'
+import './styles/main.css'
 
-import "@/service";
-import { log } from "./utils/log";
+const routes = setupLayouts(generatedRoutes)
 
-Vue.config.productionTip = false;
-Vue.use(Vuesax, {
-  colors: {
-    primary: "#5b3cc4",
-    success: "rgb(23, 201, 100)",
-    danger: "rgb(242, 19, 93)",
-    warning: "rgb(255, 130, 0)",
-    dark: "rgb(36, 33, 69)",
+// https://github.com/antfu/vite-ssg
+export const createApp = ViteSSG(
+  App,
+  { routes },
+  (ctx) => {
+    // install all modules under `modules/`
+    Object.values(import.meta.globEager('./modules/*.ts')).map(i => i.install?.(ctx))
   },
-});
-new Vue({
-  router,
-  render: (h) => h(App),
-}).$mount("#app");
-
-log("App Entry");
+)
