@@ -18,7 +18,7 @@ const log = (() => {
     sub: (subNamespace: string) => ReturnType<typeof debug>
   }
 
-  logger.sub = (subNamespace) => {
+  logger.sub = (subNamespace: string) => {
     return debug(`${ns}:${subNamespace}`)
   }
   return logger

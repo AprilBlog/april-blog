@@ -22,6 +22,7 @@
     "@antfu/eslint-config": "^0.7.0",
     "@iconify/json": "^1.1.368",
     "@intlify/vite-plugin-vue-i18n": "^2.3.1",
+    "@types/debug": "^4.1.6",
     "@types/nprogress": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^4.28.2",
     "@vitejs/plugin-vue": "^1.2.4",
