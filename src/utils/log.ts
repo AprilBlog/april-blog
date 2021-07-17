@@ -5,7 +5,7 @@ import { getDefaultLogNamespace } from './env'
  * init ns for better debug ex
  */
 const ns = getDefaultLogNamespace()
-if (typeof localStorage !== undefined)
+if (typeof window !== 'undefined')
   localStorage.debug = `${ns}:*`
 
 const log = (() => {
