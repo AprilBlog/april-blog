@@ -8,6 +8,6 @@ const { t } = useI18n()
 
 <template>
   <div class=" border border-red-500">
-    <h1>Current Working In Progress !!</h1>
+    <h1>Currently Working In Progress !!</h1>
   </div>
 </template>
