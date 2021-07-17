@@ -10,6 +10,11 @@ export default defineConfig({
   theme: {
     extend: {
       colors: {},
+      fontFamily: {
+        cg: ['Cormorant Garamond', 'serif'],
+        ebg: ['EB Garamond', 'serif'],
+        lato: ['Lato', 'sans-serif'],
+      },
     },
   },
 })
