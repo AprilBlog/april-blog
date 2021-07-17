@@ -1,4 +1,4 @@
-# A typical env file for this proj should have
-VUE_APP_INFURA_IPFS_PROJECT_ID=[replace with ur ipfs proj id in Infura]
-VUE_APP_INFURA_IPFS_PROJECT_SECRET=[replace with ur ipfs proj secret in Infura]
-VUE_APP_DEVELOPER=[replace with ur nickname, will be used as prefix of the utils/log namespace]
+VITE_LOG_NAMESPACE=[default namespace for your log system]
+
+VITE_INFURA_IPFS_PROJECT_ID=[your ipfs proj id in Infura]
+VITE_INFURA_IPFS_PROJECT_SECRET=[your ipfs proj secret in Infura]

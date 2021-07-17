@@ -7,14 +7,16 @@ A Blog Platform runs on the top of RSS3
 # Project Setup
 
 ```bash
-# 1. install the deps
-yarn install
+# 1. install the deps, make sure you have pnpm installed already
+pnpm i 
 
-# 2. need a env file to save ur sensitive config info
+# 2. init a env file to save your sensitive config
 cat env-template > .env
 
-# 3. u r ready to go
-yarn serve
+# 3. rupdate the config file accordingly
+
+# 4. you are ready to go
+pnpm dev
 ```
 
 # Utils 
@@ -30,8 +32,8 @@ log('What ever u want')
 // test:default What ever u want
 
 
-// log with customized namespace //
-const subLog = log('logic1')
+// log in sub namespace, i.e. logic1 //
+const subLog = log.sub('logic1')
 subLog('What ever u want')
 // test:logic1 What ever u want
 ```
