@@ -15,7 +15,7 @@ const handlePost = (ev: MouseEvent) => {
 </script>
 
 <template>
-  <header class="flex justify-between">
+  <header class="flex justify-between mb-4">
     <img class="min-w-[78px] h-[52px]" :src="logoPng" />
     <div class="flex justify-center items-center">
       <PostButton @click="handlePost" />

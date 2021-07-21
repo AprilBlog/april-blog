@@ -12,7 +12,7 @@ const { t } = useI18n()
       flex items-center justify-center"
   >
     <span class="text-2xl font-semibold font-cg">
-      {{ t('button.post', 'Post') }}
+      {{ t('postButton.label', 'Post') }}
     </span>
     <img class="ml-1" :src="postButtonIconPng" />
   </button>

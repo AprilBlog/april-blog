@@ -7,7 +7,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div class=" border border-red-500">
-    <h1>Currently Working In Progress !!</h1>
+  <div>
+    <TitleInput />
   </div>
 </template>
