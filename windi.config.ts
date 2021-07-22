@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [
     typography(),
   ],
+  safelist: ['hidden'],
   attributify: true,
   theme: {
     extend: {
